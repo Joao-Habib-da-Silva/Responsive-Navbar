@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 05;
+}
+body {
+    background-color: black;
+}
+header {
+    display: flex;
+    font-family: poppins;
+    padding-left: 50px;
+    padding-top: 25px;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    height: 70px;
+    color: white;
+}
+#header li {
+    display: inline;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 30px;
+    
+
+}
+#list {
+    margin-left: 700px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+#header h1 {
+    cursor: pointer;
+}
+#header button {
+    background-color: black;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    margin-top: -5px;
+    display: none;
+}
+@media (max-width: 450px) {
+    #header button {
+        display: flex;
+        margin-top: 7px;
+        padding-right: 10px;
+    }
+    #list {
+        display: none;
+    }
+    #navbar {
+        width: 240px;
+        display: flex;
+        justify-content: center;
+    }
+    #navbar li {
+       margin-left: 50px;
+       font-size: x-large;
+       margin-top: 20px;
+    }
+}
+#navbar {
+    color: white;
+    font-family: poppins;
+    float: right;
+    font-weight: 500;
+    font-size: large;
+    padding-right: 100px;
+    padding-top: 50px;
+    border-left: 1px solid white;
+    height: 560px;
+    display: none;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+
+}
+#navbar.open {
+    display: flex;
+    transform: translatex(-50px);
+    transition: transform 0.5s ease-in-out;
+}
+ 
+#navbar li {
+    list-style: none;
+    cursor: pointer;
+    margin-top: 25px;
+}
+#navbar li:hover {
+    color: #ccd5ae;
+}
+header h1:hover {
+    color: #ccd5ae;
+}
+header li:hover {
+    color: #ccd5ae;
+}
